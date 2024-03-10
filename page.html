@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stuff I make</h1>
+    </header>
+    <main>
+		<p>I've been making Windows desktop applications for longer than I can remember, mostly C++/Qt with a bit of C# sprinkled in. Also machine learning</p>
+
+        <section id="projects">
+            <h2>Projects by Year</h2>
+            <article class="project-year">
+                <h3>2024</h3>
+				<div class="project">
+					<h4>WinDiffusion <span class="tag">C++</span> <span class="tag">Qt</span> <span class="tag">ONNX</span></h4>
+					<img src="resources/p1interface.png" alt="Project Interface" class="medium-img">
+					<p>Many frontends for using Stable Diffusion models on local PC exist, but practically all of them are in Python and necessitate ~10GB of libraries installed via conda/pip that can break at any time.<br><br>
+					This is a Stable Diffusion/SDXL program written in C++/Qt, without Python dependencies. Easy to install and lightweight, it makes local image generation accessible to people with minimal tech knowledge. Supports text-to-image, img2img and inpainting
+					</p>
+					<div class="results-container">
+						<img src="resources/p1result1.png" alt="Result 1" class="result-img">
+						<img src="resources/p1result2.png" alt="Result 2" class="result-img">
+						<img src="resources/p1result3.png" alt="Result 3" class="result-img">
+					</div>
+					<a href="https://github.com/ZDisket/WinDiffusion">Code on GitHub</a>
+				</div>
+                <!-- More projects for 2024 -->
+            </article>
+            <article class="project-year">
+                <h3>2023</h3>
+				<div class="project">
+					<h4>Tacotron 2 Convolutional Attention Consistency <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
+					<img src="resources/p2interface.png" alt="Project Interface" class="medium-img">
+					<p>Tacotron 2 is a text-to-speech model, still very popular and one of the first to become so. However, its autoregressive RNN architecture makes it prone to attention problems<br><br>
+					Many techniques have been already applied to help in this aspect. Here, leveraging recent advancements, I propose mine, which is more flexible, and simple to integrate.
+					</p>
+					<a href="https://zdisket.github.io/conv-att-c/">Paper page</a>
+				</div>
+            </article>
+            <article class="project-year">
+                <h3>2021</h3>
+				<div class="project">
+					<h4>TensorVox<span class="tag">C++</span> <span class="tag">Qt</span> <span class="tag">PyTorch</span> <span class="tag">Tensorflow</span></h4>
+					<img src="resources/p3interface.png" alt="Project Interface" class="medium-img">
+					<p>Few programs for using modern text-to-speech models locally exist, and those that do are in Python and require a bunch of dependencies<br>
+					Since I also got into freelancing training and selling voice models, I needed and made a C++/Qt program that was easy and lightweight to install and use for neural TTS.<br>
+					Supports both PyTorch (exported with TorchScript) and Tensoflow (Tensorflow SavedModel), multiple languages and phonemizers (ARPA, GlobalPhone, IPA), includes spectrogram, waveform views, and can do multi-threaded generation<br><br>
+					Almost 200 stars on GitHub, and succesfully delivered to all kinds of customers for years while I was freelancing.
+					</p>
+					<a href="https://github.com/ZDisket/TensorVox">Code on GitHub</a>
+				</div>
+            </article>
+            <article class="project-year">
+                <h3>2019</h3>
+				<div class="project">
+					<h4>ZMapCharter<span class="tag">C++</span> <span class="tag">Qt</span><span class="tag">SFML</span> </h4>
+					<img src="resources/p4interface.png" alt="Project Interface" class="medium-img">
+					<p>I had an interest in statistics and couldn't find a map charter and I liked the challenge so I made one<br>
+					Supports global mapping via static region textures I took off a game, or custom triangulated shapefiles (a format I rolled up), and supports importing from .csv of .xlsx files. Uses SFML for rendering
+					</p>
+					<div class="results-container">
+						<img src="resources/p4result1.png" alt="Result 1" class="result-imgw">
+						<img src="resources/p4result2.png" alt="Result 2" class="result-imgw">
+						<img src="resources/p4result3.png" alt="Result 3" class="result-imgw">
+					</div>
+					<a href="https://mega.nz/file/PAx3FZgA#IRogc6HTkAyscGlFnOa8ibQpfED-iXxcdz9K5WO2zAo">Download binary</a>
+				</div>
+				<div class="project">
+					<h4>Chess Titans clone<span class="tag">C++</span> <span class="tag">Qt</span><span class="tag">SFML</span><span class="tag">Irrlicht</span> <span class="tag">3D</span> </h4>
+					<img src="resources/p5interface.png" alt="Project Interface" class="medium-img">
+					<p>
+					A Chess Titans clone made with C++, using Irrlicht for the 3D and SFML for sound, as well as Qt for a launcher (the game itself uses console arguments). Tested in both Windows and Linux (Kubuntu). The AI is not mine.
+					</p>
+					<div class="results-container">
+					<a href="https://mega.nz/file/jZpzQTaT#0MRXm_i42y-15p8mQflBhJnxFxkHchW7mDOJTogFpFE">Download source and binaries</a>
+					<a href="https://files.catbox.moe/oqryjx.webm">Gameplay video</a>
+				</div>
+            </article>
+            <article class="project-year">
+                <h3>2018</h3>
+				<div class="project">
+					<h4>ZDEditorRS<span class="tag">C++</span> <span class="tag">Qt</span> <span class="tag">InterBase 5.x</span></h4>
+					<img src="resources/p6interface.png" alt="Project Interface" class="medium-img">
+					<p>There's a geopolitical strategy game called SuperPower 2, which supports modding.<br><br>For modifying the database, there is a tool called "GLEditor" provided; however, it is extremely glitchy and crashy due to it being antiquated; its subset of C++ was already long out of support by that time<br>
+					With help from the game maker who provided the original database interaction code, I rewrote both the interface and "database interaction" in modern C++<br>
+					Since its release, it has become the de-facto database modding tool for the SuperPower 2 community.
+					</p>
+					<a href="https://github.com/ZDisket/ZDEditorRS">Code on GitHub</a>
+					<a href="https://mega.nz/file/uZAVxYjD#zL_i2N6CfznGLK5VsmV9I2ZtiG-vVq6xTYNjTJVEBSw">Download binary</a>
+				</div>
+            <!-- More years and projects -->
+        </section>
+		<section id="open-source-contributions">
+			<h2>Open Source Contributions</h2>
+			
+			<article class="contribution-year">
+				<h3>2020</h3>
+				
+				<div class="contribution">
+					<h4>MFA duration extraction for FastSpeech2</h4>
+					<p>I helped implement Montreal Forced Aligner-based duration extraction for FastSpeech2, eliminating the need for a teacher model. I had just started learning Python, so my code was not used directly.</p>
+					<a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/147#issuecomment-663635130" target="_blank">View PR comment</a>
+				</div>
+				<br>
+				<div class="contribution">
+					<h4>C++ Support for TensorFlowTTS</h4>
+					<p>I added C++ support for exporting and using text-to-speech models with C++, using the Tensorflow SavedModel C API</p>
+					<a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/191#issue-674718555" target="_blank">View PR</a>
+				</div>
+			</article>
+			<article class="contribution-year">
+				<h3>2021</h3>
+				
+				<div class="contribution">
+					<h4>Update to C++ support for TensorFlowTTS</h4>
+					<p>Updated the C++ support to remove a phonemizer dependency and add my much lighter own implementation</p>
+					<a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/462#issue-787339412" target="_blank">View PR</a>
+				</div>
+				<br>
+				<div class="contribution">
+					<h4>44.1KHz pretrained model for TensorFlowTTS</h4>
+					<p>Having made a copy of the LJSpeech dataset, but in 44.1KHz, I trained and added pretrained model to the repo, and introduced a new vocoder configuration: Multi-Band MelGAN + HiFi-GAN discriminator</p>
+					<a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/670#issue-997270511" target="_blank">View PR</a>
+				</div>
+				
+			</article>
+			<!-- More contributions can be added here -->
+		</section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Myself. All rights reserved.</p>
+    </footer>
+</body>
+</html>
