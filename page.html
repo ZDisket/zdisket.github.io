@@ -17,15 +17,40 @@
 </head>
 <body>
     <header>
-        <h1>Stuff I make</h1>
+        <h1>The site I make about me</h1>
     </header>
     <main>
-		<p>I've been making Windows desktop applications for longer than I can remember, mostly C++/Qt with a bit of C# sprinkled in. Also machine learning</p>
-
+		<h2>About myself</h2>
+		<p>Did Visual Basic and C# very early as child, learned C++ in 2013. First real projects doing videogame modding circa 2017 - 2019, all C++ with Qt and WinAPI</p>
+		<p>Then in 2020 I pivoted to machine learning because I was interested in speech synthesis for creativity. Went from zero Python experience then to maintainer of TensorFlowTTS in 2021 where I contributed the then-first open source TTS model that output 44.1KHz audio.</p>
+		<p>I went to uni 2019-2021 but dropped out to focus on machine learning aside from feeling like it was limiting me. I made TensorVox (C++ ML TTS app) and began freelancing, mostly just training and slightly modifying models until 2023 when I started working for Storyteller
+		and went in deep into model research itself, releasing Convolutional Attention Consistency and innovating things like <a href="https://x.com/ZDi____/status/1849258040836469123">LS-ALiBi</a> </p>
+		<p>Now I focus on research in model architecture - and by that I mean mostly Transformers - for GenAI (mostly speech, but doing image and text too). Did you know I worked with GPTs before the ChatGPT hype? I finetuned GPT-J-6B back in 2021 with <a href="https://sites.research.google/trc/about/">TPU Research Cloud</a> (back then Tensorflow Research Cloud) TPUs</p>
+		<p>Currently 24 years old. I need compute and smart colleagues. </p>
         <section id="projects">
             <h2>Projects by Year</h2>
             <article class="project-year">
                 <h3>2024</h3>
+				<div class="project">
+					<h4>ReLUGT activation function <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
+					<img src="resources/relugtzacts.png" alt="Project Interface" class="medium-img">
+					<p>GLU variants have been the dominant activation function for the feedfowards in Transformers. Here, inspired by an element of KANs, I propose a parametric ReLU<br><br>
+					Early tests shows faster convergence than SwiGLU at the cost of slightly lower per-step time and more VRAM usage.
+					</p>
+					<div class="results-container">
+						<img src="resources/train loss 2500-40k.png" alt="Result 1" class="medium-img">
+					</div>
+					<a href="https://zdtech.substack.com/p/activation-functions-part-2">Blog post 1 (theory and small test)</a> 
+					<a href="https://zdtech.substack.com/p/activation-functions-part-3?r=4a9mkn">Blog post 2 (GPT test)</a>
+				</div>
+				<div class="project">
+					<h4>(WIP) Celestia-TTS <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
+					<img src="resources/aligns.png" alt="Project Interface" class="medium-img">
+					<p>Most modern TTS models are incapable of modeling erratic, emotional speech; using FastSpeech2 as a base, I find out this is because they are not resilient to time series. Also, I pile on some of my Transformer upgrades and some others.<br><br>
+					Introducing a duration predictor with 2xConv and 1xLSTM paired with a duration discriminator (not shown in paper). Currently incomplete due to lack of compute.
+					</p>
+					<a href="https://drive.google.com/drive/u/1/folders/1gTViWXuARBC4WoYEr7AXpImDyLaX0w-L">Audio samples and PDF</a> 
+				</div>
 				<div class="project">
 					<h4>WinDiffusion <span class="tag">C++</span> <span class="tag">Qt</span> <span class="tag">ONNX</span></h4>
 					<img src="resources/p1interface.png" alt="Project Interface" class="medium-img">
