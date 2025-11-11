@@ -23,9 +23,9 @@
 		<h2>About myself</h2>
 		<p>Did Visual Basic and C# very early as child, learned C++ in 2013. First real projects doing videogame modding circa 2017 - 2019, all C++ with Qt and WinAPI</p>
 		<p>Then in 2020 I pivoted to machine learning because I was interested in speech synthesis for creativity. Went from zero Python experience then to maintainer of TensorFlowTTS in 2021 where I contributed the then-first open source TTS model that output 44.1KHz audio.</p>
-		<p>I went to uni 2019-2021 but dropped out to focus on machine learning aside from feeling like it was limiting me. I made TensorVox (C++ ML TTS app) and began freelancing, mostly just training and slightly modifying models until 2023 when I started working for Storyteller
+		<p>I went to uni 2019-2021 but dropped out to focus on machine learning aside from feeling like it was limiting me. I made TensorVox (C++ ML TTS app) and began freelancing, mostly just training and slightly modifying models until 2023 when I started working for a startup
 		and went in deep into model research itself</p>
-		<p>Now I focus on research in model architecture, training - and by that I mean mostly Transformers - for GenAI (mostly speech, but doing image and text too). Did you know I worked with GPTs before the ChatGPT hype? I finetuned GPT-J-6B back in 2021 with <a href="https://sites.research.google/trc/about/">TPU Research Cloud</a> (back then Tensorflow Research Cloud) TPUs. Also, check out my <a href="https://substack.com/@zd12793091">Substack blog</a></p>
+		<p>Now I focus on ML model stuff, training - and by that I mean mostly Transformers - for GenAI (mostly speech, but doing image and text too). Did you know I worked with GPTs before the ChatGPT hype? I finetuned GPT-J-6B back in 2021 with <a href="https://sites.research.google/trc/about/">TPU Research Cloud</a> (back then Tensorflow Research Cloud) TPUs. Also, check out my <a href="https://substack.com/@zd12793091">Substack blog</a>; lastly, I'm good at doing machine learning on AMD hardware and hold a ROCm Star certificate since June 2025</p>
 	
 	<blockquote style="font-size: 20px; font-style: italic; color: #333; margin: 20px; text-align: center;">
         "I am not designed to come second or third. I am designed to win."
@@ -40,6 +40,37 @@
         <section id="projects">
             <h2>Projects by Year</h2>
             <article class="project-year">
+			    <h3>2025</h3>
+				<div class="project">
+					<h4>Echolancer <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
+					<div class="results-container">
+						<img src="resources/p8result1.png" alt="Waveform" class="medium-img">
+					</div>
+
+					<p>I trained a text-to-speech model on concatenated text-audio tokens, using a modern LLM-style decoder-only approach.<br><br>
+					It takes in characters and outputs NeuCodec tokens, which has only a single 50 tok/s codebook, making it ideal for efficient audio language modeling.
+					
+					</p>
+					<a href="https://zdisket.github.io/echolancersite/">Demo page</a>
+					<a href="https://github.com/ZDisket/Echolancer">Repo and models</a>
+				</div>
+				<h3>2025</h3>
+				<div class="project">
+					<h4>MQGAN/MusicLSTM <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
+					<div class="results-container">
+						<img src="resources/p9result1.png" alt="Diagram" class="medium-img">
+						<img src="resources/p9result2.jpg" alt="MQGAN Refiner" class="medium-img">
+						<img src="resources/p9result3.png" alt="MusicLSTM" class="medium-img">
+					</div>
+					<p>To try and solve audio tokenization, I tried to make a spectrogram codec.<br><br>
+					First, I tried a simple spectrogram GAN using Finite Scalar Quantization. Later on, I managed to split the model in two for better quality: A ResNet that compresses, and a U-Net "refiner" that adds detail.
+					The idea was that I'd use said spectrogram codec for the audio tokenization, then a neural vocoder (mel2audio), but that approach fell apart later and I abandoned it. Still, I made my own GAN!
+					
+					</p>
+					<a href="https://zdisket.github.io/mqgan-site/">Project site</a>
+					<a href="https://zdtech.substack.com/p/mqgan-refiner">MQGAN refiner post</a>
+				</div>
+				
                 <h3>2024</h3>
 				<div class="project">
 					<h4>ReLUGT activation function <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
@@ -52,14 +83,6 @@
 					</div>
 					<a href="https://zdtech.substack.com/p/activation-functions-part-2">Blog post 1 (theory and small test)</a> 
 					<a href="https://zdtech.substack.com/p/activation-functions-part-3?r=4a9mkn">Blog post 2 (GPT test)</a>
-				</div>
-				<div class="project">
-					<h4>(WIP) Celestia-TTS <span class="tag">Python</span> <span class="tag">Machine Learning</span> <span class="tag">PyTorch</span></h4>
-					<img src="resources/aligns.png" alt="Project Interface" class="medium-img">
-					<p>Most modern TTS models are incapable of modeling erratic, emotional speech; using FastSpeech2 as a base, I find out this is because they are not resilient to time series. Also, I pile on some of my Transformer upgrades and some others.<br><br>
-					Introducing a duration predictor with 2xConv and 1xLSTM paired with a duration discriminator (not shown in paper). Currently incomplete due to lack of compute.
-					</p>
-					<a href="https://drive.google.com/drive/u/1/folders/1gTViWXuARBC4WoYEr7AXpImDyLaX0w-L">Audio samples and PDF</a> 
 				</div>
 				<div class="project">
 					<h4>WinDiffusion <span class="tag">C++</span> <span class="tag">Qt</span> <span class="tag">ONNX</span></h4>
