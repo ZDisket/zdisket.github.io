@@ -469,4 +469,38 @@ section {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}.about-extra-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.location-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s, border-color 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.location-box:hover {
+    transform: translateX(5px);
+    border-color: var(--accent-color);
+}
+
+.location-icon {
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.location-text {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 0;
 }
