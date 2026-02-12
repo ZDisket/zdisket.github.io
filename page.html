@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QQ38P6YVB"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -12,396 +11,560 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZDisket | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ZDisket | Timeline Portfolio</title>
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">ZDisket</a>
+    <nav class="top-nav">
+        <div class="top-nav-inner">
+            <a href="#top" class="brand">ZDisket</a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#arc-neo">2026+</a>
+                <a href="#arc-research">Research Arc</a>
+                <a href="#arc-hybrid">Hybrid Arc</a>
+                <a href="#arc-windev">WinDev Arc</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-content fade-in">
-                <h1>Machine Learning Engineer &<br>Windows application developer</h1>
-                <p>Specializing in Speech Synthesis, Transformers, and C++ software dev.</p>
-                <a href="#projects" class="cta-button">View My Work</a>
+    <header id="top" class="hero-section">
+        <div class="hero-shell reveal">
+            <p class="hero-eyebrow">Machine Learning Engineer + Windows Application Developer</p>
+            <h1>I started by building native Windows tools, and now I am deep in neural audio systems.</h1>
+            <p class="hero-summary">
+                I keep the newest work first so you can see what I am focused on right now, then scroll down through
+                the projects, pivots, and milestones that shaped how I build.
+            </p>
+            <div class="hero-actions">
+                <a href="#timeline" class="primary-btn">Explore Timeline</a>
+                <a href="#contact" class="secondary-btn">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="identity-panels reveal">
+            <article class="identity-card quote-card">
+                <h2>Guiding Quote</h2>
+                <p class="quote-text">"I am not designed to come second or third. I am designed to win."</p>
+                <p class="quote-author">Ayrton Senna</p>
+            </article>
+
+            <article class="identity-card location-card">
+                <h2>Location</h2>
+                <div class="location-row">
+                    <div class="location-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            </article>
+
+            <article class="identity-card now-card">
+                <h2>Current Focus</h2>
+                <ul class="now-list">
+                    <li>Transformer-based generation for speech, image, and text</li>
+                    <li>Applied research with product-ready implementation paths</li>
+                    <li>Model architecture decisions grounded in practical delivery</li>
+                </ul>
+            </article>
+        </div>
+    </header>
+
+    <main id="timeline" class="timeline-layout">
+        <section class="timeline-intro reveal">
+            <h2>Timeline Portfolio</h2>
+            <p>
+                Structured in multi-year arcs, ordered newest to oldest. Each entry is either a project case study,
+                a research case study, or a milestone that marks a career-shaping shift.
+            </p>
+            <div class="timeline-legend">
+                <span class="legend-item legend-research">Research Card</span>
+                <span class="legend-item legend-project">Project Card</span>
+                <span class="legend-item legend-milestone">Milestone</span>
+            </div>
+            <div class="timeline-controls" aria-label="Entry filters">
+                <button type="button" class="control-chip is-active" data-filter="all">All</button>
+                <button type="button" class="control-chip" data-filter="research">Research</button>
+                <button type="button" class="control-chip" data-filter="project">Project</button>
+                <button type="button" class="control-chip" data-filter="milestone">Milestone</button>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <h2>About Me</h2>
-                        <p>I started my journey with Visual Basic and C# as a child, moving to C++ in 2013. My early
-                            projects involved videogame modding (2017-2019) using C++, Qt, and WinAPI.</p>
-                        <p>In 2020, I pivoted to Machine Learning, driven by a passion for speech synthesis. I went from
-                            zero Python experience to becoming a maintainer of <strong>TensorFlowTTS</strong> in 2021,
-                            where I contributed the first open-source TTS model capable of 44.1KHz audio output.</p>
-                        <p>I briefly attended university (2019-2021) but dropped out to focus entirely on ML research
-                            and development. I built <strong>TensorVox</strong>, a C++ ML TTS application, and
-                            freelanced training/modifying models. In 2023 I joined a startup and started getting deep
-                            into model stuff</p>
-                        <p>Today, I focus on Transformers for GenAI (Speech, Image, Text). I have experience finetuning
-                            GPT-J-6B on TPUs back in 2021 and hold a <strong>ROCm Star certificate</strong> as a result
-                            of my work with AMD hardware.</p>
-                    </div>
-                    <div class="about-extra fade-in">
-                        <div class="about-extra-content">
-                            <div class="quote-box">
-                                <p class="quote-text">"I am not designed to come second or third. I am designed to win."
+        <section id="arc-neo" class="arc arc-neo reveal" data-arc="neo-hybrid">
+            <header class="arc-header">
+                <div>
+                    <p class="arc-name">Neo-Hybrid Arc</p>
+                    <p class="arc-span">2026-present</p>
+                </div>
+                <p class="arc-theme">Research, product, and business reinforce each other in a single operating loop.</p>
+            </header>
+
+            <div class="arc-entries">
+                <article class="timeline-entry case-entry" data-type="research" data-arc="neo-hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card research-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2026</p>
+                            <span class="type-badge research-badge">Research</span>
+                        </div>
+                        <h3>Brontes</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    Brontes is a waveform-domain enhancement model that repairs neural codec artifacts
+                                    while upsampling degraded 24 kHz speech into 48 kHz target audio. It matters because
+                                    it replaces artifact-preserving enhancement behavior with synthesis-first restoration
+                                    aimed at perceptual realism.
                                 </p>
-                                <p class="quote-author">— Ayrton Senna</p>
+                                <ul class="case-highlights">
+                                    <li>Synthesis-first stack with selective deep skips, temporal compression, and LSTM bottleneck</li>
+                                    <li>Gated decoder fusion with adversarial objectives in time and spectral domains</li>
+                                    <li>Stabilized training through discriminator representation changes</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://github.com/ZDisket/Brontes" target="_blank"
+                                        rel="noopener noreferrer">Code</a>
+                                    <a href="https://github.com/ZDisket/Brontes/blob/main/assets/Brontes%20Technical%20Report.pdf"
+                                        target="_blank" rel="noopener noreferrer">Technical Report</a>
+                                </div>
                             </div>
-                            <div class="location-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="location-icon">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                <p class="location-text">Buenos Aires, Argentina</p>
-                            </div>
+                            <img src="resources/brontes_diagram.png" alt="Brontes architecture diagram" class="case-image">
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </article>
 
-        <!-- Skills Section -->
-        <section id="skills" class="bg-glass">
-            <div class="container fade-in">
-                <h2>Technical Arsenal</h2>
-
-                <div class="skills-container">
-
-                    <div class="skill-category">
-                        <h3>Core & Systems</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 90%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">C++</span>
-                                    <span class="skill-percentage">90%</span>
+                <article class="timeline-entry case-entry" data-type="research" data-arc="neo-hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card research-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2026</p>
+                            <span class="type-badge research-badge">Research</span>
+                        </div>
+                        <h3>VITS EVOlution (VITS EVO)</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    VITS EVOlution is my research-driven optimization of the VITS TTS architecture,
+                                    built to deliver extreme real-time speed while keeping audio quality practical for
+                                    real products. It reaches about 300x real-time synthesis on an NVIDIA A6000 and
+                                    demonstrates a deployment-ready path through ONNX + DirectML in TensorVox.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Architecture and inference optimizations targeted at low-latency, real-time use</li>
+                                    <li>Model is private, but production integration is documented in TensorVox</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://github.com/ZDisket/TensorVox/pull/19" target="_blank"
+                                        rel="noopener noreferrer">View TensorVox Pull Request</a>
                                 </div>
                             </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 70%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">Qt</span>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 65%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">WinAPI</span>
-                                    <span class="skill-percentage">65%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 40%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">Linux</span>
-                                    <span class="skill-percentage">40%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 25%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">C#</span>
-                                    <span class="skill-percentage">25%</span>
-                                </div>
-                            </div>
+                            <img src="resources/tv_deu.png" alt="TensorVox DirectML deployment screenshot"
+                                class="case-image">
                         </div>
                     </div>
+                </article>
 
-                    <div class="skill-category">
-                        <h3>Machine Learning & AI</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 80%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">Transformers</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 75%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">ML (General)</span>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 70%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">GANs</span>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 17%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">TensorFlow</span>
-                                    <span class="skill-percentage">17%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 25%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">Diffusion</span>
-                                    <span class="skill-percentage">25%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Hardware & Acceleration</h3>
-                        <div class="skills-grid">
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 65%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">HIP/ROCm</span>
-                                    <span class="skill-percentage">65%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 40%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">TPUs</span>
-                                    <span class="skill-percentage">25%</span>
-                                </div>
-                            </div>
-                            <div class="skill-card">
-                                <div class="skill-card-fill" style="width: 35%"></div>
-                                <div class="skill-content">
-                                    <span class="skill-name">CUDA</span>
-                                    <span class="skill-percentage">40%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="container">
-                <h2>Selected Projects</h2>
-                <div class="projects-grid fade-in">
-
-                    <!-- Echolancer -->
-                    <article class="project-card">
-                        <img src="resources/p8result1.png" alt="Echolancer Waveform" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2025</div>
-                            <h3 class="project-title">Echolancer</h3>
-                            <p class="project-desc">A text-to-speech model trained on concatenated text-audio tokens
-                                using a modern LLM-style decoder-only approach. Features a 50 tok/s codebook for
-                                efficient audio language modeling.</p>
-                            <div class="project-links">
-                                <a href="https://zdisket.github.io/echolancersite/" class="link-btn">View Demo</a>
-                                <a href="https://github.com/ZDisket/Echolancer" class="link-btn">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- MQGAN -->
-                    <article class="project-card">
-                        <img src="resources/p9result2.jpg" alt="MQGAN" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2025</div>
-                            <h3 class="project-title">MQGAN / MusicLSTM</h3>
-                            <p class="project-desc">Experimental audio tokenization using a spectrogram codec.
-                                Implemented a ResNet compressor and U-Net refiner for high-quality reconstruction.</p>
-                            <div class="project-links">
-                                <a href="https://zdisket.github.io/mqgan-site/" class="link-btn">Project Site</a>
-                                <a href="https://zdtech.substack.com/p/mqgan-refiner" class="link-btn">Read Article</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ReLUGT -->
-                    <article class="project-card">
-                        <img src="resources/relugtzacts.png" alt="ReLUGT" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2024</div>
-                            <h3 class="project-title">ReLUGT Activation</h3>
-                            <p class="project-desc">Proposed a parametric ReLU activation function inspired by KANs.
-                                Demonstrates faster convergence than SwiGLU in early tests.</p>
-                            <div class="project-links">
-                                <a href="https://zdtech.substack.com/p/activation-functions-part-2"
-                                    class="link-btn">Theory</a>
-                                <a href="https://zdtech.substack.com/p/activation-functions-part-3?r=4a9mkn"
-                                    class="link-btn">GPT Test</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- WinDiffusion -->
-                    <article class="project-card">
-                        <img src="resources/p1interface.png" alt="WinDiffusion" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2024</div>
-                            <h3 class="project-title">WinDiffusion</h3>
-                            <p class="project-desc">A lightweight C++/Qt frontend for Stable Diffusion. No Python
-                                dependencies required for the end-user. Supports txt2img, img2img, and inpainting.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/ZDisket/WinDiffusion" class="link-btn">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Tacotron 2 CAC -->
-                    <article class="project-card">
-                        <img src="resources/p2interface.png" alt="Tacotron 2" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2023</div>
-                            <h3 class="project-title">Tacotron 2 Conv Attention</h3>
-                            <p class="project-desc">A novel approach to solving attention stability issues in Tacotron 2
-                                using Convolutional Attention Consistency.</p>
-                            <div class="project-links">
-                                <a href="https://zdisket.github.io/conv-att-c/" class="link-btn">Read thing</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- TensorVox -->
-                    <article class="project-card">
-                        <img src="resources/p3interface.png" alt="TensorVox" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2021</div>
-                            <h3 class="project-title">TensorVox</h3>
-                            <p class="project-desc">High-performance local TTS application written in C++/Qt. Supports
-                                PyTorch and TensorFlow models. Widely used for freelancing deliverables.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/ZDisket/TensorVox" class="link-btn">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ZMapCharter -->
-                    <article class="project-card">
-                        <img src="resources/p4interface.png" alt="ZMapCharter" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2019</div>
-                            <h3 class="project-title">ZMapCharter</h3>
-                            <p class="project-desc">Statistical map charting tool built with C++ and SFML. Supports
-                                custom shapefiles and CSV/XLSX imports.</p>
-                            <div class="project-links">
-                                <a href="https://mega.nz/file/PAx3FZgA#IRogc6HTkAyscGlFnOa8ibQpfED-iXxcdz9K5WO2zAo"
-                                    class="link-btn">Download</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- ZDEditorRS -->
-                    <article class="project-card">
-                        <img src="resources/p6interface.png" alt="ZDEditorRS" class="project-image">
-                        <div class="project-content">
-                            <div class="project-year">2018</div>
-                            <h3 class="project-title">ZDEditorRS</h3>
-                            <p class="project-desc">Modern C++ rewrite of the database modding tool for SuperPower 2.
-                                Became the community standard for modding.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/ZDisket/ZDEditorRS" class="link-btn">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Open Source Contributions -->
-        <section id="opensource" class="bg-surface">
-            <div class="container fade-in">
-                <h2>Open Source Contributions</h2>
-                <div class="contributions-list">
-                    <div class="contribution-card">
-                        <div class="project-year">2021</div>
-                        <h3>44.1KHz Pretrained Model for TensorFlowTTS</h3>
-                        <p>Trained and released the first 44.1KHz open-source TTS model for the repo, introducing
-                            Multi-Band MelGAN + HiFi-GAN discriminator.</p>
-                        <a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/670#issue-997270511"
-                            class="link-btn">View PR</a>
-                    </div>
-                    <div class="contribution-card">
-                        <div class="project-year">2020</div>
-                        <h3>C++ Support for TensorFlowTTS</h3>
-                        <p>Implemented C++ support for exporting and using TTS models via TensorFlow SavedModel C API.
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="neo-hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2026</p>
+                        <h3>Research-to-Product Validation in TensorVox</h3>
+                        <p>
+                            Integrated VITS EVO into TensorVox with ONNX + DirectML, proving native Windows 10+ GPU
+                            inference across DX12 hardware and demonstrating a clear path from model research to
+                            user-facing delivery.
                         </p>
-                        <a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/191#issue-674718555"
-                            class="link-btn">View PR</a>
                     </div>
-                </div>
+                </article>
+
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer id="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Always open to discussing opportunities. Email me (below) for anything business/formal/whatever
-                    inquiries</p>
-
-                <div class="social-links">
-                    <a href="mailto:nika109021@gmail.com" class="social-icon" title="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/ZDisket" class="social-icon" title="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://huggingface.co/ZDisket" class="social-icon" title="HuggingFace">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 12h.01M15 12h.01M10 16c.5.5 2 1 2 1s1.5-.5 2-1M7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://substack.com/@zd12793091" class="social-icon" title="Substack">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 11.1h16v1.8H4zM4 6h16v1.8H4zM4 16.2h16l-8 4.8-8-4.8z"></path>
-                        </svg>
-                    </a>
+        <section id="arc-research" class="arc arc-research reveal" data-arc="pure-research">
+            <header class="arc-header">
+                <div>
+                    <p class="arc-name">Pure Research Arc</p>
+                    <p class="arc-span">2023-2025</p>
                 </div>
+                <p class="arc-theme">Deep neural audio exploration with frequent experimental iteration and publication.</p>
+            </header>
 
-                <p style="font-size: 0.9rem; color: var(--text-secondary);">&copy; 2025 Myself; vibe coded with Gemini
-                    3.0.
-                </p>
+            <div class="arc-entries">
+                <article class="timeline-entry case-entry" data-type="research" data-arc="pure-research">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card research-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2025</p>
+                            <span class="type-badge research-badge">Research</span>
+                        </div>
+                        <h3>Echolancer</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A text-to-speech model trained on concatenated text-audio tokens in a decoder-only
+                                    LLM-style setup. It matters because it pushes efficient, high-fidelity audio
+                                    language modeling toward practical throughput.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>50 tok/s codebook design for efficient audio token pacing</li>
+                                    <li>Single-stream sequence framing for language-audio alignment experiments</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://zdisket.github.io/echolancersite/" target="_blank"
+                                        rel="noopener noreferrer">Demo</a>
+                                    <a href="https://github.com/ZDisket/Echolancer" target="_blank"
+                                        rel="noopener noreferrer">Code</a>
+                                </div>
+                            </div>
+                            <img src="resources/p8result1.png" alt="Echolancer waveform visualization" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry case-entry" data-type="research" data-arc="pure-research">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card research-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2025</p>
+                            <span class="type-badge research-badge">Research</span>
+                        </div>
+                        <h3>MQGAN / MusicLSTM</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    Experimental audio tokenization around a spectrogram codec with a ResNet compressor
+                                    and U-Net refiner. It matters because reconstruction quality is improved without
+                                    abandoning compact tokenized workflows.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Spectrogram-first codec framing for music-oriented generation tests</li>
+                                    <li>Compressor-refiner split for better detail recovery in outputs</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://zdisket.github.io/mqgan-site/" target="_blank"
+                                        rel="noopener noreferrer">Project Site</a>
+                                    <a href="https://zdtech.substack.com/p/mqgan-refiner" target="_blank"
+                                        rel="noopener noreferrer">Blog</a>
+                                </div>
+                            </div>
+                            <img src="resources/p9result2.jpg" alt="MQGAN generated visual sample" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="pure-research">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2025</p>
+                        <h3>ROCm Star Recognition</h3>
+                        <p>
+                            Earned ROCm Star recognition through hands-on work with AMD acceleration hardware and
+                            tooling in real model training contexts.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-entry case-entry" data-type="research" data-arc="pure-research">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card research-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2024</p>
+                            <span class="type-badge research-badge">Research</span>
+                        </div>
+                        <h3>ReLUGT Activation</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A parametric ReLU-family activation inspired by KAN-style flexibility. It matters
+                                    because early tests showed stronger initial convergence against common SwiGLU
+                                    baselines in language-model experiments.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Activation design focused on trainability in early optimization phases</li>
+                                    <li>Backed by practical GPT-side tests and writeups</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://zdtech.substack.com/p/activation-functions-part-2" target="_blank"
+                                        rel="noopener noreferrer">Theory</a>
+                                    <a href="https://zdtech.substack.com/p/activation-functions-part-3?r=4a9mkn"
+                                        target="_blank" rel="noopener noreferrer">GPT Test</a>
+                                </div>
+                            </div>
+                            <img src="resources/relugtzacts.png" alt="ReLUGT activation chart" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry case-entry" data-type="project" data-arc="pure-research">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card project-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2024</p>
+                            <span class="type-badge project-badge">Project</span>
+                        </div>
+                        <h3>WinDiffusion</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A lightweight C++/Qt frontend for Stable Diffusion with no Python dependency for
+                                    end users. It matters because it brings practical local-generation workflows to a
+                                    native Windows experience.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Supports txt2img, img2img, and inpainting in one native interface</li>
+                                    <li>Built for simpler onboarding and repeatable local execution</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://github.com/ZDisket/WinDiffusion" target="_blank"
+                                        rel="noopener noreferrer">Code</a>
+                                </div>
+                            </div>
+                            <img src="resources/p1interface.png" alt="WinDiffusion desktop interface" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="pure-research">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2023</p>
+                        <h3>Startup Transition and Deeper Model Work</h3>
+                        <p>
+                            Joined a startup context and shifted into deeper architecture and training-detail work,
+                            tightening the loop between research decisions and shipped outcomes.
+                        </p>
+                    </div>
+                </article>
             </div>
+        </section>
+
+        <section id="arc-hybrid" class="arc arc-hybrid reveal" data-arc="hybrid">
+            <header class="arc-header">
+                <div>
+                    <p class="arc-name">Hybrid Arc</p>
+                    <p class="arc-span">2020-2023</p>
+                </div>
+                <p class="arc-theme">Software engineering and ML research overlapped to produce practical model tooling.</p>
+            </header>
+
+            <div class="arc-entries">
+                <article class="timeline-entry case-entry" data-type="research" data-arc="hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card research-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2023</p>
+                            <span class="type-badge research-badge">Research</span>
+                        </div>
+                        <h3>Tacotron 2 Conv Attention</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A convolutional attention consistency approach to stabilize Tacotron 2 attention. It
+                                    matters because robust alignment directly improves TTS training reliability.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Targets known instability patterns in sequence-to-sequence speech synthesis</li>
+                                    <li>Framed as practical experimentation with reproducible writeups</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://zdisket.github.io/conv-att-c/" target="_blank"
+                                        rel="noopener noreferrer">Writeup</a>
+                                </div>
+                            </div>
+                            <img src="resources/p2interface.png" alt="Tacotron 2 project interface" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry case-entry" data-type="project" data-arc="hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card project-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2021</p>
+                            <span class="type-badge project-badge">Project</span>
+                        </div>
+                        <h3>TensorVox</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A high-performance local TTS application in C++/Qt supporting both PyTorch and
+                                    TensorFlow models. It matters because it converted research assets into deployable
+                                    production-facing workflows.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Served as the execution backbone for client and freelancing deliverables</li>
+                                    <li>Bridged model experimentation with practical desktop UX</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://github.com/ZDisket/TensorVox" target="_blank"
+                                        rel="noopener noreferrer">Code</a>
+                                </div>
+                            </div>
+                            <img src="resources/p3interface.png" alt="TensorVox desktop interface" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2021</p>
+                        <h3>Became TensorFlowTTS Maintainer</h3>
+                        <p>
+                            Contributed the first 44.1KHz open-source pretrained model in the repository, expanding
+                            practical high-fidelity speech options for the community.
+                        </p>
+                        <div class="case-links milestone-links">
+                            <a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/670#issue-997270511"
+                                target="_blank" rel="noopener noreferrer">PR</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="hybrid">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2020</p>
+                        <h3>Added C++ Support to TensorFlowTTS</h3>
+                        <p>
+                            Implemented C++ export and runtime usage through the TensorFlow SavedModel C API,
+                            broadening deployment options beyond Python-only workflows.
+                        </p>
+                        <div class="case-links milestone-links">
+                            <a href="https://github.com/TensorSpeech/TensorFlowTTS/pull/191#issue-674718555"
+                                target="_blank" rel="noopener noreferrer">PR</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="arc-windev" class="arc arc-windev reveal" data-arc="windev">
+            <header class="arc-header">
+                <div>
+                    <p class="arc-name">WinDev Arc</p>
+                    <p class="arc-span">2015-2020</p>
+                </div>
+                <p class="arc-theme">Early system-builder years focused on complete desktop tools and shipping discipline.</p>
+            </header>
+
+            <div class="arc-entries">
+                <article class="timeline-entry case-entry" data-type="project" data-arc="windev">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card project-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2019</p>
+                            <span class="type-badge project-badge">Project</span>
+                        </div>
+                        <h3>ZMapCharter</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A statistical map charting desktop tool built in C++ and SFML. It matters because
+                                    it reflects early end-to-end product thinking: data import, visualization, and user
+                                    utility in one shipped package.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Supports custom shapefiles and CSV/XLSX data workflows</li>
+                                    <li>Built for practical analysis tasks instead of toy demos</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://mega.nz/file/PAx3FZgA#IRogc6HTkAyscGlFnOa8ibQpfED-iXxcdz9K5WO2zAo"
+                                        target="_blank" rel="noopener noreferrer">Download</a>
+                                </div>
+                            </div>
+                            <img src="resources/p4interface.png" alt="ZMapCharter desktop interface" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry case-entry" data-type="project" data-arc="windev">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card case-card project-card">
+                        <div class="case-header">
+                            <p class="entry-meta">2018</p>
+                            <span class="type-badge project-badge">Project</span>
+                        </div>
+                        <h3>ZDEditorRS</h3>
+                        <div class="case-body">
+                            <div>
+                                <p class="case-description">
+                                    A modern C++ rewrite of a core SuperPower 2 database modding tool. It matters
+                                    because it became the community standard and validated long-term maintainability
+                                    over quick scripting solutions.
+                                </p>
+                                <ul class="case-highlights">
+                                    <li>Focused on reliability for power users managing large game data edits</li>
+                                    <li>Demonstrated maintainable architecture in an active modding ecosystem</li>
+                                </ul>
+                                <div class="case-links">
+                                    <a href="https://github.com/ZDisket/ZDEditorRS" target="_blank"
+                                        rel="noopener noreferrer">Code</a>
+                                </div>
+                            </div>
+                            <img src="resources/p6interface.png" alt="ZDEditorRS interface" class="case-image">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="windev">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2017-2019</p>
+                        <h3>Video Game Modding Phase</h3>
+                        <p>
+                            Intensive C++, Qt, and WinAPI work through community tooling built strong systems instincts,
+                            fast iteration habits, and direct feedback loops with real users.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-entry milestone-entry" data-type="milestone" data-arc="windev">
+                    <div class="entry-pin" aria-hidden="true"></div>
+                    <div class="entry-card milestone-card">
+                        <span class="milestone-badge">Milestone</span>
+                        <p class="entry-meta">2015</p>
+                        <h3>Desktop Engineering Foundations</h3>
+                        <p>
+                            Early software years moved from Visual Basic and C# roots into C++-first development,
+                            setting up the systems depth that later supported ML and research work.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer id="contact" class="contact-footer reveal">
+            <h2>Get In Touch</h2>
+            <p>
+                Open to collaborations that combine research, product execution, and high-performance engineering.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:nika109021@gmail.com">Email</a>
+                <a href="https://github.com/ZDisket" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://huggingface.co/ZDisket" target="_blank" rel="noopener noreferrer">HuggingFace</a>
+                <a href="https://www.modelscope.ai/profile/ZDisket" target="_blank" rel="noopener noreferrer">ModelScope</a>
+                <a href="https://substack.com/@zd12793091" target="_blank" rel="noopener noreferrer">Substack</a>
+            </div>
+            <p class="footer-note">Copyright 2026 ZDisket. Built for timeline-first growth.</p>
         </footer>
     </main>
 
