@@ -202,10 +202,9 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    Brontes is a waveform-domain enhancement model that repairs neural codec artifacts
-                                    while upsampling degraded 24 kHz speech into 48 kHz target audio. It matters because
-                                    it replaces artifact-preserving enhancement behavior with synthesis-first restoration
-                                    aimed at perceptual realism.
+                                    Waveform-domain enhancement model built to repair neural codec artifacts while
+                                    upsampling degraded 24 kHz speech to 48 kHz output. It follows a synthesis-first
+                                    design to rebuild detail instead of preserving artifact patterns.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Synthesis-first stack with selective deep skips, temporal compression, and LSTM bottleneck</li>
@@ -235,10 +234,10 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    VITS EVOlution is my research-driven optimization of the VITS TTS architecture,
-                                    built to deliver extreme real-time speed while keeping audio quality practical for
-                                    real products. It reaches about 300x real-time synthesis on an NVIDIA A6000 and
-                                    demonstrates a deployment-ready path through ONNX + DirectML in TensorVox.
+                                    Optimized evolution of the VITS text-to-speech architecture focused on extreme
+                                    real-time performance with practical audio quality. Current builds reach about 300x
+                                    real-time on an NVIDIA A6000 and run in TensorVox through ONNX + DirectML on
+                                    Windows 10+ DX12 GPUs.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Architecture and inference optimizations targeted at low-latency, real-time use</li>
@@ -293,9 +292,9 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A text-to-speech model trained on concatenated text-audio tokens in a decoder-only
-                                    LLM-style setup. It matters because it pushes efficient, high-fidelity audio
-                                    language modeling toward practical throughput.
+                                    Text-to-speech model trained on concatenated text-audio tokens using a decoder-only
+                                    LLM-style architecture. Uses a 50 tok/s codebook for efficient audio language
+                                    modeling with high-fidelity output.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>50 tok/s codebook design for efficient audio token pacing</li>
@@ -324,9 +323,9 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    Experimental audio tokenization around a spectrogram codec with a ResNet compressor
-                                    and U-Net refiner. It matters because reconstruction quality is improved without
-                                    abandoning compact tokenized workflows.
+                                    Experimental audio tokenization built around a spectrogram codec, with a ResNet
+                                    compressor and U-Net refiner for cleaner reconstruction. Designed to keep tokenized
+                                    workflows compact while improving output quality.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Spectrogram-first codec framing for music-oriented generation tests</li>
@@ -368,9 +367,8 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A parametric ReLU-family activation inspired by KAN-style flexibility. It matters
-                                    because early tests showed stronger initial convergence against common SwiGLU
-                                    baselines in language-model experiments.
+                                    Parametric ReLU-family activation inspired by KAN-style flexibility. Early language
+                                    model tests show faster initial convergence than SwiGLU baselines.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Activation design focused on trainability in early optimization phases</li>
@@ -399,9 +397,8 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A lightweight C++/Qt frontend for Stable Diffusion with no Python dependency for
-                                    end users. It matters because it brings practical local-generation workflows to a
-                                    native Windows experience.
+                                    Lightweight C++/Qt frontend for Stable Diffusion with no Python dependency for end
+                                    users. Supports txt2img, img2img, and inpainting in a native Windows workflow.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Supports txt2img, img2img, and inpainting in one native interface</li>
@@ -453,8 +450,8 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A convolutional attention consistency approach to stabilize Tacotron 2 attention. It
-                                    matters because robust alignment directly improves TTS training reliability.
+                                    Convolutional Attention Consistency approach for stabilizing Tacotron 2 attention.
+                                    Built to reduce alignment failures and improve training reliability.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Targets known instability patterns in sequence-to-sequence speech synthesis</li>
@@ -481,9 +478,9 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A high-performance local TTS application in C++/Qt supporting both PyTorch and
-                                    TensorFlow models. It matters because it converted research assets into deployable
-                                    production-facing workflows.
+                                    High-performance local TTS application written in C++/Qt with support for both
+                                    PyTorch and TensorFlow models. Widely used for freelancing deliverables and model
+                                    deployment workflows.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Served as the execution backbone for client and freelancing deliverables</li>
@@ -556,9 +553,8 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A statistical map charting desktop tool built in C++ and SFML. It matters because
-                                    it reflects early end-to-end product thinking: data import, visualization, and user
-                                    utility in one shipped package.
+                                    Statistical map charting tool built with C++ and SFML. Supports custom shapefiles
+                                    and CSV/XLSX imports for end-to-end data-to-visualization workflows.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Supports custom shapefiles and CSV/XLSX data workflows</li>
@@ -585,9 +581,8 @@
                         <div class="case-body">
                             <div>
                                 <p class="case-description">
-                                    A modern C++ rewrite of a core SuperPower 2 database modding tool. It matters
-                                    because it became the community standard and validated long-term maintainability
-                                    over quick scripting solutions.
+                                    Modern C++ rewrite of the SuperPower 2 database modding tool. Became the community
+                                    standard for modding with a maintainable long-term codebase.
                                 </p>
                                 <ul class="case-highlights">
                                     <li>Focused on reliability for power users managing large game data edits</li>
